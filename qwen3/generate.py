@@ -30,7 +30,7 @@ def generate_names(model, tokenizer, n: int, temperature: float, top_k=None):
     # Every name starts from the newline (start-of-name) token.
     start = torch.full((n, 1), tokenizer.newline_id, dtype=torch.long)
     out = model.generate(start, max_new_tokens=model.cfg.max_seq_len,
-                         temperature=temperature, top_k=top_k)
+                         temperature=temperature, top_k=top_k, eos_id=tokenizer.eos_id)
     names = []
     for row in out.tolist():
         # Drop the leading newline, then keep everything up to the next newline.

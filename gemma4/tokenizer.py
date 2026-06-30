@@ -19,7 +19,9 @@ class CharTokenizer:
         self.stoi = {ch: i for i, ch in enumerate(chars)}   # char -> id
         self.itos = {i: ch for i, ch in enumerate(chars)}   # id -> char
         self.vocab_size = len(chars)
+        # The newline both separates names and marks end-of-sequence (EOS).
         self.newline_id = self.stoi["\n"]
+        self.eos_id = self.newline_id
 
     @classmethod
     def from_file(cls, path: str) -> "CharTokenizer":

@@ -60,8 +60,14 @@ class TinyQwen(nn.Module):
 
     @torch.no_grad()
     def generate(self, idx: torch.Tensor, max_new_tokens: int,
-                 temperature: float = 1.0, top_k: int = None) -> torch.Tensor:
-        """Autoregressively extend idx [B, T] by max_new_tokens tokens."""
+                 temperature: float = 1.0, top_k: int = None,
+                 eos_id: int = None) -> torch.Tensor:
+        """Autoregressively extend idx [B, T].
+
+        If eos_id is given, each row stops once it emits that token (finished
+        rows keep getting padded with eos), and we exit early once all rows stop.
+        """
+        finished = torch.zeros(idx.size(0), dtype=torch.bool, device=idx.device)
         for _ in range(max_new_tokens):
             # Never feed more than max_seq_len tokens of context.
             idx_cond = idx[:, -self.cfg.max_seq_len:]
@@ -74,5 +80,12 @@ class TinyQwen(nn.Module):
 
             probs = F.softmax(logits, dim=-1)
             next_id = torch.multinomial(probs, num_samples=1)  # sample one token
+
+            if eos_id is not None:
+                next_id[finished] = eos_id                       # keep finished rows on eos
+                finished = finished | (next_id.squeeze(1) == eos_id)
+
             idx = torch.cat([idx, next_id], dim=1)
+            if eos_id is not None and bool(finished.all()):
+                break                                            # everyone hit eos
         return idx

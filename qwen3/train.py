@@ -7,6 +7,8 @@ the cleaned names, builds a trivial character vocabulary inline, trains with a
 plain loop, then samples a few names.
 """
 
+import os
+
 import torch
 
 from config import ModelConfig
@@ -16,7 +18,8 @@ from tokenizer import CharTokenizer
 # ---------------------------------------------------------------------------
 # Hyperparameters
 # ---------------------------------------------------------------------------
-DATA_FILE = "temiz_isimler.txt"
+# Shared dataset lives one level up in ../data/ .
+DATA_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "temiz_isimler.txt")
 BATCH_SIZE = 64
 BLOCK_SIZE = 16        # context length used during training (<= cfg.max_seq_len)
 STEPS = 3000
@@ -62,7 +65,8 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=LEARNING_RATE)
 def sample_names(n: int = 10, max_new_tokens: int = 20):
     model.eval()
     start = torch.full((n, 1), tokenizer.newline_id, dtype=torch.long, device=device)
-    out = model.generate(start, max_new_tokens=max_new_tokens, temperature=1.0, top_k=None)
+    out = model.generate(start, max_new_tokens=max_new_tokens, temperature=1.0,
+                         top_k=None, eos_id=tokenizer.eos_id)
     model.train()
     names = []
     for row in out.tolist():
