@@ -2,20 +2,20 @@
 
 The odd one out. The other three folders are single language models that emit
 discrete letters. ACE-Step is **four models in series** that turn a tag into a
-*continuous* signal, so the toy task changes: each **Turkish letter is a tag**
+_continuous_ signal, so the toy task changes: each **Turkish letter is a tag**
 whose "song" is a tiny waveform (a sine of `letter_index + 1` cycles). The whole
 point is the **two-brain split** — a low-resolution autoregressive **planner**
-decides *what to play*, and a high-resolution **diffusion renderer** decides
-*how it sounds*.
+decides _what to play_, and a high-resolution **diffusion renderer** decides
+_how it sounds_.
 
 ## The four regions (read the files in this order)
 
-| Region            | File(s)                          | Job                                                        |
-| ----------------- | -------------------------------- | ---------------------------------------------------------- |
-| 🟪 **plan**       | `planner.py`                     | 5Hz-lm: tag → coarse **5Hz code** blueprint (reuses TinyQwen) |
-| 🟦 **bridge**     | `fsq.py`, `text_encoder.py`      | FSQ: discrete codes ↔ continuous "source latent"; tag → cross-attn conditioning |
-| 🟧 **render**     | `dit.py`, `flow.py`              | DiT denoises noise → **25Hz latent** in a few flow-matching steps |
-| 🟩 **decode**     | `vae.py`                         | tiny Oobleck VAE: 25Hz latent → **waveform** (the WAV)     |
+| Region        | File(s)                     | Job                                                                             |
+| ------------- | --------------------------- | ------------------------------------------------------------------------------- |
+| 🟪 **plan**   | `planner.py`                | 5Hz-lm: tag → coarse **5Hz code** blueprint (reuses TinyQwen)                   |
+| 🟦 **bridge** | `fsq.py`, `text_encoder.py` | FSQ: discrete codes ↔ continuous "source latent"; tag → cross-attn conditioning |
+| 🟧 **render** | `dit.py`, `flow.py`         | DiT denoises noise → **25Hz latent** in a few flow-matching steps               |
+| 🟩 **decode** | `vae.py`                    | tiny Oobleck VAE: 25Hz latent → **waveform** (the WAV)                          |
 
 `pipeline.py` wires all four together (print the shapes!), `data.py` makes the
 toy tones, `config.py` holds every shape, `train.py` trains the four stages in
@@ -56,7 +56,7 @@ reuse the exact Qwen3 blocks (`rms_norm`, `rotary`, `attention`, `mlp`, `block`)
 **Simplified:** mono 64-sample "audio", not 48kHz stereo; a 64-entry FSQ codebook,
 not ~64k; one letter as the whole caption/lyrics; no LoRA, no intrinsic-RL
 alignment, no chain-of-thought planning; tones are deterministic, so the planner
-*memorizes* tag → codes (alignment "emerges" only in spirit). Fidelity is traded
+_memorizes_ tag → codes (alignment "emerges" only in spirit). Fidelity is traded
 for being able to read every step.
 
 ## Run it

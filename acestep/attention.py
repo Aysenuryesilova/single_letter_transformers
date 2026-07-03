@@ -16,12 +16,11 @@ Two flavours, both built from the same Qwen3 recipe (GQA + QK-Norm + RoPE):
 """
 
 import torch
-from torch import nn
 import torch.nn.functional as F
-
 from config import AceConfig
 from rms_norm import RMSNorm
 from rotary import apply_rotary
+from torch import nn
 
 
 def repeat_kv(x: torch.Tensor, n_repeat: int) -> torch.Tensor:

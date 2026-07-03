@@ -22,13 +22,12 @@ design choices are kept, at toy scale:
 """
 
 import torch
-from torch import nn
-
-from config import AceConfig
-from rms_norm import RMSNorm
 from attention import Attention, CrossAttention
+from config import AceConfig
 from mlp import MLP
+from rms_norm import RMSNorm
 from rotary import precompute_cos_sin
+from torch import nn
 
 # --- Real ACE-Step v1.5, for comparison ------------------------------------
 # The real DiT is a ~2B-parameter hybrid-attention Transformer (the XL is

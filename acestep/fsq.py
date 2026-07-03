@@ -22,10 +22,9 @@ multi-dimensional code becomes a single codebook id.
 """
 
 import torch
-from torch import nn
 import torch.nn.functional as F
-
 from config import AceConfig
+from torch import nn
 
 # --- Real ACE-Step v1.5, for comparison ------------------------------------
 # The real FSQ tokenizer uses *attention pooling* to compress 25Hz VAE latents

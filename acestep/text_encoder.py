@@ -13,9 +13,8 @@ the two predictions.
 """
 
 import torch
-from torch import nn
-
 from config import AceConfig
+from torch import nn
 
 # --- Real ACE-Step v1.5, for comparison ------------------------------------
 # The real conditioning encoder is Qwen3-Embedding-0.6B: it turns the caption

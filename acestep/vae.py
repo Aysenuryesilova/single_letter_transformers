@@ -22,9 +22,8 @@ surprises anywhere in the pipeline.
 """
 
 import torch
-from torch import nn
-
 from config import AceConfig
+from torch import nn
 
 # --- Real ACE-Step v1.5, for comparison ------------------------------------
 # The real AutoencoderOobleck compresses 48kHz *stereo* audio into a 64-dim

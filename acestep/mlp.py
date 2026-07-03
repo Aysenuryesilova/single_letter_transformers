@@ -5,10 +5,9 @@ a "gate" (passed through SiLU) and an "up". Their elementwise product is
 projected back down. This gating tends to learn better than a plain MLP.
 """
 
-from torch import nn
 import torch.nn.functional as F
-
 from config import AceConfig
+from torch import nn
 
 
 class MLP(nn.Module):

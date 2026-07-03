@@ -21,13 +21,12 @@ version of constraining the LM to the audio-code range.
 """
 
 import torch
-from torch import nn
 import torch.nn.functional as F
-
+from block import TransformerBlock
 from config import AceConfig
 from rms_norm import RMSNorm
-from block import TransformerBlock
 from rotary import precompute_cos_sin
+from torch import nn
 
 # --- Real ACE-Step v1.5, for comparison ------------------------------------
 # The real 5Hz-lm is Qwen3-based (0.6B / 1.7B / 4B). It first *reasons* inside

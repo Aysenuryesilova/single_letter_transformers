@@ -17,15 +17,15 @@ one).
 """
 
 import torch
-
 from config import AceConfig
-from data import all_songs, letter_degrees, N_LETTERS
-from vae import AutoencoderOobleckTiny
-from fsq import FSQBridge
-from text_encoder import TextEncoder
-from planner import Planner, make_batch
 from dit import DiT
 from flow import FlowMatchScheduler
+from fsq import FSQBridge
+from planner import Planner, make_batch
+from text_encoder import TextEncoder
+from vae import AutoencoderOobleckTiny
+
+from data import N_LETTERS, all_songs, letter_degrees
 
 LEARNING_RATE = 3e-3
 VAE_STEPS = 3000
@@ -34,7 +34,8 @@ PLANNER_STEPS = 1500
 DIT_STEPS = 4000
 SEED = 1337
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
+device = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
+print(f"Using device: {device}")
 torch.manual_seed(SEED)
 
 cfg = AceConfig(n_letters=N_LETTERS)

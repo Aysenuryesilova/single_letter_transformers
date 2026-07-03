@@ -14,14 +14,14 @@ import sys
 import wave
 
 import torch
-
-from data import ALPHABET, stoi, letter_notes, BEATS_PER_BAR
-from vae import AutoencoderOobleckTiny
-from fsq import FSQBridge
-from text_encoder import TextEncoder
-from planner import Planner
 from dit import DiT
+from fsq import FSQBridge
 from pipeline import AceStepPipeline
+from planner import Planner
+from text_encoder import TextEncoder
+from vae import AutoencoderOobleckTiny
+
+from data import ALPHABET, BEATS_PER_BAR, letter_notes, stoi
 
 CHECKPOINT = "acestep.pt"
 

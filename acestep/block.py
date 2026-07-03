@@ -10,12 +10,11 @@ which makes deep stacks train stably.
 """
 
 import torch
-from torch import nn
-
-from config import AceConfig
-from rms_norm import RMSNorm
 from attention import Attention
+from config import AceConfig
 from mlp import MLP
+from rms_norm import RMSNorm
+from torch import nn
 
 
 class TransformerBlock(nn.Module):

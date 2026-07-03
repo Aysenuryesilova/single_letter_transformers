@@ -8,13 +8,13 @@ compare architectures directly instead of getting lost in scale.
 Four language-model architectures, same task, side by side — plus a fifth
 folder that is a different beast entirely (a four-model audio pipeline):
 
-| Folder                     | Architecture         | What makes it different                                                                               |
-| -------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------- |
-| [`qwen3/`](qwen3/)         | **Qwen3 dense**      | The clean modern baseline: RMSNorm, QK-Norm, GQA, RoPE, SwiGLU, pre-norm                              |
-| [`qwen3_5/`](qwen3_5/)     | **Qwen3.5 hybrid**   | Adds **Gated DeltaNet** linear-attention layers, interleaved with full attention                      |
-| [`gemma4/`](gemma4/)       | **Gemma**            | **Sandwich norm**, local/global **sliding-window** attention, dual RoPE, **GeGLU**, embedding scaling |
-| [`deepseek3/`](deepseek3/) | **DeepSeek-V3 sparse** | **MLA** compressed-KV attention + **MoE** with a shared expert and **aux-loss-free** load balancing |
-| [`acestep/`](acestep/)     | **ACE-Step v1.5**    | Not an LM: a **planner LM + FSQ bridge + diffusion DiT + VAE** that turn a letter into a **waveform** |
+| Folder                     | Architecture           | What makes it different                                                                               |
+| -------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------- |
+| [`qwen3/`](qwen3/)         | **Qwen3 dense**        | The clean modern baseline: RMSNorm, QK-Norm, GQA, RoPE, SwiGLU, pre-norm                              |
+| [`qwen3_5/`](qwen3_5/)     | **Qwen3.5 hybrid**     | Adds **Gated DeltaNet** linear-attention layers, interleaved with full attention                      |
+| [`gemma4/`](gemma4/)       | **Gemma**              | **Sandwich norm**, local/global **sliding-window** attention, dual RoPE, **GeGLU**, embedding scaling |
+| [`deepseek3/`](deepseek3/) | **DeepSeek-V3 sparse** | **MLA** compressed-KV attention + **MoE** with a shared expert and **aux-loss-free** load balancing   |
+| [`acestep/`](acestep/)     | **ACE-Step v1.5**      | Not an LM: a **planner LM + FSQ bridge + diffusion DiT + VAE** that turn a letter into a **waveform** |
 
 > The goal is _clarity_, not fidelity. Each folder implements the architecture's
 > signature ideas in the simplest correct form; large-scale tricks (MatFormer,
@@ -124,11 +124,11 @@ for row in out.tolist():
 
 Checkpoint paths and model classes per folder:
 
-| Folder      | Model class    | Checkpoint                 |
-| ----------- | -------------- | -------------------------- |
-| `qwen3`     | `TinyQwen`     | `qwen3/tiny_qwen.pt`       |
-| `qwen3_5`   | `TinyQwen35`   | `qwen3_5/tiny_qwen35.pt`   |
-| `gemma4`    | `TinyGemma`    | `gemma4/tiny_gemma.pt`     |
+| Folder      | Model class    | Checkpoint                   |
+| ----------- | -------------- | ---------------------------- |
+| `qwen3`     | `TinyQwen`     | `qwen3/tiny_qwen.pt`         |
+| `qwen3_5`   | `TinyQwen35`   | `qwen3_5/tiny_qwen35.pt`     |
+| `gemma4`    | `TinyGemma`    | `gemma4/tiny_gemma.pt`       |
 | `deepseek3` | `TinyDeepSeek` | `deepseek3/tiny_deepseek.pt` |
 
 ## Results (toy run, CPU)

@@ -19,7 +19,6 @@ FFT on each beat.
 """
 
 import torch
-
 from config import AceConfig
 
 # --- Real ACE-Step v1.5 input, for comparison ------------------------------
