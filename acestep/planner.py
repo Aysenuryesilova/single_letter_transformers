@@ -3,12 +3,21 @@
 This is a Qwen3-style causal language model (the very same TinyQwen recipe used
 in ../qwen3), but its vocabulary is not letters-of-a-name: it is
 
-    [ letter tags ]  ++  [ 64 audio-code tokens ]
-      ids 0..n_letters-1     ids n_letters..n_letters+63
+    [ letter tags ] ++ [<think>, </think>] ++ [ degree tokens ] ++ [ 512 audio codes ]
 
-Given one tag token it autoregressively writes the song's coarse 5Hz blueprint —
-``code_len`` audio-code tokens — answering "what to play" before any audio is
-rendered. It never has to produce a continuous signal; that is the DiT's job.
+and its one job is: given a tag token, write the whole song plan
+
+    tag  <think>  d0 d1 d2 d3  </think>  c0 c1 ... c9
+
+First it "reasons" inside a <think> block — the four scale degrees of the
+melody, the toy stand-in for the real model's YAML metadata (bpm, key,
+duration, caption). Then it emits the coarse 5Hz blueprint: ``code_len``
+audio-code tokens, answering *what to play* before any audio is rendered.
+It never produces a continuous signal; that is the DiT's job.
+
+Because every position in the plan has a fixed token type, ``generate`` masks
+the logits to the legal type at each step (structured decoding) — the toy
+version of constraining the LM to the audio-code range.
 """
 
 import torch
@@ -21,8 +30,8 @@ from block import TransformerBlock
 from rotary import precompute_cos_sin
 
 # --- Real ACE-Step v1.5, for comparison ------------------------------------
-# The real 5Hz-lm is Qwen3-based (0.6B / 1.7B / 4B). It first *reasons* inside a
-# <think> block of YAML metadata, then emits one <|audio_code_N|> token per
+# The real 5Hz-lm is Qwen3-based (0.6B / 1.7B / 4B). It first *reasons* inside
+# a <think> block of YAML metadata, then emits one <|audio_code_N|> token per
 # 200ms (5/sec -> 1200 tokens for a 240s song), N indexing a ~64k codebook:
 #
 #     <think>
@@ -36,29 +45,38 @@ from rotary import precompute_cos_sin
 #     <|audio_code_5434|><|audio_code_20161|><|audio_code_7418|> ...
 #         ... <|audio_code_35639|><|audio_code_35847|><|audio_code_15174|>
 #
-# Here (toy): no <think> YAML, the "caption" is a single letter, the codebook is
-# 64 (not ~64k), and we emit code_len=4 plain integers (not 1200 tokens).
+# Here (toy): the "caption" is one letter, the <think> metadata is the 4 scale
+# degrees of the melody, the codebook is 512 (not ~64k), and the blueprint is
+# code_len=10 tokens (a real 5Hz for our 2s bar, vs 1200 tokens for 240s).
 # ---------------------------------------------------------------------------
 
 
-def make_batch(tag_ids: torch.Tensor, codes: torch.Tensor, n_letters: int):
-    """Build (input, target) token sequences for next-token training.
+def token_layout(cfg: AceConfig):
+    """Where each token family starts: (think, end_think, degrees, codes)."""
+    think = cfg.n_letters
+    return think, think + 1, think + 2, think + 2 + cfg.n_degrees
 
-    For a tag with codes [c0,c1,c2,c3] (code_len=4):
-        input  = [tag,        c0+off, c1+off, c2+off]
-        target = [c0+off, c1+off, c2+off, c3+off]
-    where off = n_letters shifts code values into the audio-code id range.
+
+def make_batch(tag_ids: torch.Tensor, degrees: torch.Tensor,
+               codes: torch.Tensor, cfg: AceConfig):
+    """Build (input, target) for next-token training over the full plan.
+
+    For a tag with degrees [d0..d3] and codes [c0..c9]:
+        seq    = [tag, <think>, d0..d3, </think>, c0..c9]      (17 tokens)
+        input  = seq[:-1],  target = seq[1:]
     """
-    code_tokens = codes + n_letters                      # [B, code_len]
-    inp = torch.cat([tag_ids[:, None], code_tokens[:, :-1]], dim=1)
-    return inp, code_tokens                              # both [B, code_len]
+    think, end_think, deg_off, code_off = token_layout(cfg)
+    B = tag_ids.shape[0]
+    filler = lambda tok: torch.full((B, 1), tok, dtype=torch.long, device=tag_ids.device)
+    seq = torch.cat([tag_ids[:, None], filler(think), degrees + deg_off,
+                     filler(end_think), codes + code_off], dim=1)
+    return seq[:, :-1], seq[:, 1:]
 
 
 class Planner(nn.Module):
     def __init__(self, cfg: AceConfig):
         super().__init__()
         self.cfg = cfg
-        self.offset = cfg.n_letters                      # where audio-code ids start
 
         self.embed_tokens = nn.Embedding(cfg.planner_vocab, cfg.hidden_size)
         self.layers = nn.ModuleList([TransformerBlock(cfg) for _ in range(cfg.num_layers)])
@@ -85,13 +103,31 @@ class Planner(nn.Module):
         return logits, loss
 
     @torch.no_grad()
-    def generate(self, tag_ids: torch.Tensor) -> torch.Tensor:
-        """tag_ids [B] -> 5Hz blueprint codes [B, code_len] (values in 0..num_codes-1)."""
-        idx = tag_ids[:, None]                           # [B, 1]
-        for _ in range(self.cfg.code_len):
-            logits, _ = self(idx[:, -self.cfg.max_seq_len:])
+    def generate(self, tag_ids: torch.Tensor):
+        """tag_ids [B] -> (codes [B, code_len], think_degrees [B, n_think]).
+
+        Structured decoding: the plan's shape is fixed, so each step only the
+        legal token family is allowed — <think>, then degrees, then </think>,
+        then exactly code_len audio codes.
+        """
+        cfg = self.cfg
+        think, end_think, deg_off, code_off = token_layout(cfg)
+        n_think = 4                                       # degrees inside <think>
+
+        # legal (lo, hi) id range for each generated position
+        ranges = ([(think, think + 1)] + [(deg_off, deg_off + cfg.n_degrees)] * n_think
+                  + [(end_think, end_think + 1)]
+                  + [(code_off, code_off + cfg.num_codes)] * cfg.code_len)
+
+        idx = tag_ids[:, None]                            # [B, 1]
+        for lo, hi in ranges:
+            logits, _ = self(idx[:, -cfg.max_seq_len:])
             logits = logits[:, -1, :]
-            logits[:, :self.offset] = float("-inf")      # only audio-code tokens are legal
-            next_token = logits.argmax(dim=-1, keepdim=True)   # data is deterministic -> greedy
+            mask = torch.full_like(logits, float("-inf"))
+            mask[:, lo:hi] = 0.0                          # only this family is legal
+            next_token = (logits + mask).argmax(dim=-1, keepdim=True)  # deterministic -> greedy
             idx = torch.cat([idx, next_token], dim=1)
-        return idx[:, 1:] - self.offset                  # drop tag, shift back to code values
+
+        degrees = idx[:, 2:2 + n_think] - deg_off         # inside the <think> block
+        codes = idx[:, -cfg.code_len:] - code_off         # the 5Hz blueprint
+        return codes, degrees

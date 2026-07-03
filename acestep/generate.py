@@ -1,12 +1,12 @@
-"""Generate a waveform from a letter (or several) with the trained pipeline.
+"""Generate music from a letter (or several) with the trained pipeline.
 
 Run:  python generate.py            # letter "a"
       python generate.py e          # letter "e"
-      python generate.py merhaba    # one tone per letter, concatenated
+      python generate.py merhaba    # one 2s bar per letter — a little tune
 
-It prints the shape at every region boundary, checks that each generated tone
-has the right dominant frequency (letter index + 1 cycles), and writes the
-result to out.wav using only the stdlib `wave` module.
+It prints the shape at every region boundary, checks each generated bar note
+by note (the FFT of every beat should peak at that beat's melody frequency),
+and writes the result to out.wav using only the stdlib `wave` module.
 """
 
 import struct
@@ -15,7 +15,7 @@ import wave
 
 import torch
 
-from data import ALPHABET, stoi
+from data import ALPHABET, stoi, letter_notes, BEATS_PER_BAR
 from vae import AutoencoderOobleckTiny
 from fsq import FSQBridge
 from text_encoder import TextEncoder
@@ -24,7 +24,6 @@ from dit import DiT
 from pipeline import AceStepPipeline
 
 CHECKPOINT = "acestep.pt"
-SAMPLE_RATE = 8000          # toy playback rate for the .wav
 
 
 def load() -> AceStepPipeline:
@@ -38,10 +37,25 @@ def load() -> AceStepPipeline:
     return AceStepPipeline(cfg, vae, fsq, text_encoder, planner, dit, ckpt["latent_scale"])
 
 
-def dominant_cycles(wave1d: torch.Tensor) -> int:
-    """The strongest non-DC frequency = number of cycles across the clip."""
-    spectrum = torch.fft.rfft(wave1d).abs()
-    return spectrum[1:].argmax().item() + 1            # skip bin 0 (DC), shift back
+def dominant_hz(beat: torch.Tensor, sample_rate: int, min_hz: float = 160.0) -> float:
+    """The strongest frequency of one beat, ignoring the bass register."""
+    spectrum = torch.fft.rfft(beat).abs()
+    hz_per_bin = sample_rate / beat.shape[0]
+    lo = int(min_hz / hz_per_bin)                      # skip DC + the 110Hz bass
+    return (spectrum[lo:].argmax().item() + lo) * hz_per_bin
+
+
+def check_bar(bar: torch.Tensor, letter: str, sample_rate: int) -> int:
+    """FFT each beat of a generated bar against the letter's 4-note answer key."""
+    beat_len = bar.shape[0] // BEATS_PER_BAR
+    hits = 0
+    for b, expected in enumerate(letter_notes(stoi[letter])):
+        got = dominant_hz(bar[b * beat_len:(b + 1) * beat_len], sample_rate)
+        ok = abs(got - expected) / expected < 0.06     # within ~a semitone
+        hits += ok
+        print(f"   {letter}   beat {b + 1}   {expected:7.1f} Hz   {got:7.1f} Hz   "
+              f"{'ok' if ok else 'MISS'}")
+    return hits
 
 
 def write_wav(path: str, wave1d: torch.Tensor, sample_rate: int):
@@ -61,22 +75,25 @@ def main():
         return
 
     pipe = load()
+    sample_rate = pipe.cfg.sample_rate
     tags = torch.tensor([stoi[c] for c in letters])
 
     print("region shapes (one batch through the whole pipeline):")
-    waves = pipe.generate(tags, verbose=True)          # [B, 1, 64]
+    waves = pipe.generate(tags, verbose=True)          # [B, 1, 8000]
 
-    print("\nletter  expected  got  ok")
+    print("\nletter  beat   expected      got     ok")
+    hits, total = 0, 0
     segments = []
     for i, c in enumerate(letters):
-        w = waves[i, 0]
-        got, expected = dominant_cycles(w), stoi[c] + 1
-        ok = "ok" if got == expected else "MISS"
-        print(f"   {c}       {expected:>3}    {got:>3}  {ok}")
-        segments.append(w)
+        bar = waves[i, 0]
+        hits += check_bar(bar, c, sample_rate)
+        total += BEATS_PER_BAR
+        segments.append(bar)
 
-    write_wav("out.wav", torch.cat(segments), SAMPLE_RATE)
-    print(f"\nwrote out.wav  ({len(letters)} tone(s) @ {SAMPLE_RATE} Hz)")
+    write_wav("out.wav", torch.cat(segments), sample_rate)
+    seconds = len(letters) * pipe.cfg.waveform_len / sample_rate
+    print(f"\nnotes on pitch: {hits}/{total}")
+    print(f"wrote out.wav  ({len(letters)} bar(s), {seconds:.0f}s @ {sample_rate} Hz)")
 
 
 if __name__ == "__main__":

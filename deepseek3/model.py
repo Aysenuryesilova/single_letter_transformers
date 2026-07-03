@@ -9,13 +9,12 @@ lives solely in MLA's small decoupled rope dims.
 """
 
 import torch
-from torch import nn
 import torch.nn.functional as F
-
+from block import TransformerBlock
 from config import ModelConfig
 from rms_norm import RMSNorm
-from block import TransformerBlock
 from rotary import precompute_cos_sin
+from torch import nn
 
 
 class TinyDeepSeek(nn.Module):

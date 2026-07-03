@@ -5,12 +5,14 @@ Two flavours, both built from the same Qwen3 recipe (GQA + QK-Norm + RoPE):
   * Attention      : self-attention. ``is_causal=True`` for the planner LM
                      (a token may only see the past), ``is_causal=False`` for
                      the DiT (every latent frame may see every other frame —
-                     a song's timing needs to look both ways).
+                     a song's timing needs to look both ways). The DiT's odd
+                     layers additionally pass ``sliding_window=w``: each frame
+                     then only attends to neighbours within +-w positions,
+                     the real model's local/global hybrid.
   * CrossAttention : the latent *asks questions of* the conditioning. Queries
                      come from the DiT latent; keys/values come from the
-                     conditioning sequence (tag embedding + FSQ source latent).
-                     No RoPE and no causal mask here — the conditioning is a
-                     small unordered context, not a time axis.
+                     caption embedding. No RoPE and no causal mask here — the
+                     conditioning is a small unordered context, not a time axis.
 """
 
 import torch
@@ -29,12 +31,19 @@ def repeat_kv(x: torch.Tensor, n_repeat: int) -> torch.Tensor:
     return x.repeat_interleave(n_repeat, dim=1)
 
 
+def sliding_window_mask(T: int, window: int, device) -> torch.Tensor:
+    """[T, T] boolean mask: True where |i - j| <= window (may attend)."""
+    pos = torch.arange(T, device=device)
+    return (pos[:, None] - pos[None, :]).abs() <= window
+
+
 class Attention(nn.Module):
     """Self-attention with QK-Norm + RoPE + GQA (Qwen3 style)."""
 
-    def __init__(self, cfg: AceConfig, is_causal: bool = True):
+    def __init__(self, cfg: AceConfig, is_causal: bool = True, sliding_window: int = None):
         super().__init__()
         self.is_causal = is_causal
+        self.sliding_window = sliding_window
         self.num_heads = cfg.num_heads
         self.num_kv_heads = cfg.num_kv_heads
         self.head_dim = cfg.head_dim
@@ -62,7 +71,11 @@ class Attention(nn.Module):
         k = repeat_kv(k, self.n_repeat)
         v = repeat_kv(v, self.n_repeat)
 
-        out = F.scaled_dot_product_attention(q, k, v, is_causal=self.is_causal)
+        mask = None
+        if self.sliding_window is not None:
+            mask = sliding_window_mask(T, self.sliding_window, x.device)
+        out = F.scaled_dot_product_attention(q, k, v, attn_mask=mask,
+                                             is_causal=self.is_causal)
 
         out = out.transpose(1, 2).reshape(B, T, self.num_heads * self.head_dim)
         return self.o_proj(out)
