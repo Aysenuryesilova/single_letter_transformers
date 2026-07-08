@@ -22,6 +22,18 @@ folder that is a different beast entirely (a four-model audio pipeline):
 > prediction, etc.) are intentionally left out. See each folder's notes for what
 > is simplified.
 
+## Bonus: fine-tuning techniques
+
+[`lora/`](lora/) is a **teaching module, not another architecture.** It freezes any of
+the four models above and shows how **LoRA, rsLoRA, DoRA, VeRA, and PiSSA** re-steer it
+by training a tiny add-on (as few as **704 numbers** — smaller than its own README).
+The adapter code is **architecture-agnostic**: the same `inject()` wraps the
+`nn.Linear`s of qwen3 (GQA), gemma (sliding-window), or deepseek (MLA) unchanged —
+only the target layer names differ, and those live in one small registry. Every file
+is commented line by line, and [`lora/by_hand.py`](lora/by_hand.py) verifies each
+concept on pencil-friendly numbers your students can check by hand. See
+[`lora/README.md`](lora/README.md).
+
 ## Design rules
 
 - **One module = one file.** `config → rms_norm → rotary → attention → mlp → block → model`.
