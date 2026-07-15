@@ -1,0 +1,512 @@
+[\u0000] 0
+[\u0001] 1
+[\u0002] 2
+[\u0003] 3
+[\u0004] 4
+[\u0005] 5
+[\u0006] 6
+[\u0007] 7
+[\u0008] 8
+[\u0009] 9
+[\u000a] 10
+[\u000b] 11
+[\u000c] 12
+[\u000d] 13
+[\u000e] 14
+[\u000f] 15
+[\u0010] 16
+[\u0011] 17
+[\u0012] 18
+[\u0013] 19
+[\u0014] 20
+[\u0015] 21
+[\u0016] 22
+[\u0017] 23
+[\u0018] 24
+[\u0019] 25
+[\u001a] 26
+[\u001b] 27
+[\u001c] 28
+[\u001d] 29
+[\u001e] 30
+[\u001f] 31
+[ ] 32
+[!] 33
+["] 34
+[#] 35
+[$] 36
+[%] 37
+[&] 38
+['] 39
+[(] 40
+[)] 41
+[*] 42
+[+] 43
+[,] 44
+[-] 45
+[.] 46
+[/] 47
+[0] 48
+[1] 49
+[2] 50
+[3] 51
+[4] 52
+[5] 53
+[6] 54
+[7] 55
+[8] 56
+[9] 57
+[:] 58
+[;] 59
+[<] 60
+[=] 61
+[>] 62
+[?] 63
+[@] 64
+[A] 65
+[B] 66
+[C] 67
+[D] 68
+[E] 69
+[F] 70
+[G] 71
+[H] 72
+[I] 73
+[J] 74
+[K] 75
+[L] 76
+[M] 77
+[N] 78
+[O] 79
+[P] 80
+[Q] 81
+[R] 82
+[S] 83
+[T] 84
+[U] 85
+[V] 86
+[W] 87
+[X] 88
+[Y] 89
+[Z] 90
+[[] 91
+[\] 92
+[]] 93
+[^] 94
+[_] 95
+[`] 96
+[a] 97
+[b] 98
+[c] 99
+[d] 100
+[e] 101
+[f] 102
+[g] 103
+[h] 104
+[i] 105
+[j] 106
+[k] 107
+[l] 108
+[m] 109
+[n] 110
+[o] 111
+[p] 112
+[q] 113
+[r] 114
+[s] 115
+[t] 116
+[u] 117
+[v] 118
+[w] 119
+[x] 120
+[y] 121
+[z] 122
+[{] 123
+[|] 124
+[}] 125
+[~] 126
+[\u007f] 127
+[�] 128
+[�] 129
+[�] 130
+[�] 131
+[�] 132
+[�] 133
+[�] 134
+[�] 135
+[�] 136
+[�] 137
+[�] 138
+[�] 139
+[�] 140
+[�] 141
+[�] 142
+[�] 143
+[�] 144
+[�] 145
+[�] 146
+[�] 147
+[�] 148
+[�] 149
+[�] 150
+[�] 151
+[�] 152
+[�] 153
+[�] 154
+[�] 155
+[�] 156
+[�] 157
+[�] 158
+[�] 159
+[�] 160
+[�] 161
+[�] 162
+[�] 163
+[�] 164
+[�] 165
+[�] 166
+[�] 167
+[�] 168
+[�] 169
+[�] 170
+[�] 171
+[�] 172
+[�] 173
+[�] 174
+[�] 175
+[�] 176
+[�] 177
+[�] 178
+[�] 179
+[�] 180
+[�] 181
+[�] 182
+[�] 183
+[�] 184
+[�] 185
+[�] 186
+[�] 187
+[�] 188
+[�] 189
+[�] 190
+[�] 191
+[�] 192
+[�] 193
+[�] 194
+[�] 195
+[�] 196
+[�] 197
+[�] 198
+[�] 199
+[�] 200
+[�] 201
+[�] 202
+[�] 203
+[�] 204
+[�] 205
+[�] 206
+[�] 207
+[�] 208
+[�] 209
+[�] 210
+[�] 211
+[�] 212
+[�] 213
+[�] 214
+[�] 215
+[�] 216
+[�] 217
+[�] 218
+[�] 219
+[�] 220
+[�] 221
+[�] 222
+[�] 223
+[�] 224
+[�] 225
+[�] 226
+[�] 227
+[�] 228
+[�] 229
+[�] 230
+[�] 231
+[�] 232
+[�] 233
+[�] 234
+[�] 235
+[�] 236
+[�] 237
+[�] 238
+[�] 239
+[�] 240
+[�] 241
+[�] 242
+[�] 243
+[�] 244
+[�] 245
+[�] 246
+[�] 247
+[�] 248
+[�] 249
+[�] 250
+[�] 251
+[�] 252
+[�] 253
+[�] 254
+[�] 255
+[\u000a][k] -> [\u000ak] 256
+[o][n] -> [on] 257
+[a][r] -> [ar] 258
+[a][n] -> [an] 259
+[a][\u000a] -> [a\u000a] 260
+[t][\u000a] -> [t\u000a] 261
+[l][o] -> [lo] 262
+[b][a] -> [ba] 263
+[e][\u000a] -> [e\u000a] 264
+[e][n] -> [en] 265
+[e][r] -> [er] 266
+[l][u] -> [lu] 267
+[on][\u000a] -> [on\u000a] 268
+[l][a] -> [la] 269
+[g][i] -> [gi] 270
+[f][lu] -> [flu] 271
+[t][r] -> [tr] 272
+[\u000a][s] -> [\u000as] 273
+[t][ar] -> [tar] 274
+[e][l] -> [el] 275
+[o][r] -> [or] 276
+[i][n] -> [in] 277
+[flu][t\u000a] -> [flut\u000a] 278
+[\u000a][c] -> [\u000ac] 279
+[m][b] -> [mb] 280
+[u][r] -> [ur] 281
+[o][\u000a] -> [o\u000a] 282
+[e][t\u000a] -> [et\u000a] 283
+[a][k] -> [ak] 284
+[d][u] -> [du] 285
+[\u000ak][a] -> [\u000aka] 286
+[l][\u000a] -> [l\u000a] 287
+[gi][tar] -> [gitar] 288
+[e][m] -> [em] 289
+[ar][p] -> [arp] 290
+[arp][\u000a] -> [arp\u000a] 291
+[t][a] -> [ta] 292
+[an][g] -> [ang] 293
+[i][r] -> [ir] 294
+[m][e] -> [me] 295
+[i][k] -> [ik] 296
+[s][t] -> [st] 297
+[f][on\u000a] -> [fon\u000a] 298
+[ba][s] -> [bas] 299
+[\u000a][g] -> [\u000ag] 300
+[m][\u000a] -> [m\u000a] 301
+[ ][gitar] -> [ gitar] 302
+[ ][flut\u000a] -> [ flut\u000a] 303
+[g][o] -> [go] 304
+[c][h] -> [ch] 305
+[p][i] -> [pi] 306
+[tr][o] -> [tro] 307
+[m][p] -> [mp] 308
+[\u000ak][on] -> [\u000akon] 309
+[d][e] -> [de] 310
+[\u000a][ba] -> [\u000aba] 311
+[u][k] -> [uk] 312
+[t][o] -> [to] 313
+[g][\u000a] -> [g\u000a] 314
+[\u000ak][la] -> [\u000akla] 315
+[s][i] -> [si] 316
+[me][lo] -> [melo] 317
+[ gitar][\u000a] -> [ gitar\u000a] 318
+[r][e] -> [re] 319
+[a][y] -> [ay] 320
+[or][n] -> [orn] 321
+[a][l\u000a] -> [al\u000a] 322
+[a][go] -> [ago] 323
+[p][h] -> [ph] 324
+[t][in] -> [tin] 325
+[\u000ak][em] -> [\u000akem] 326
+[y][an] -> [yan] 327
+[u][l] -> [ul] 328
+[mp][et\u000a] -> [mpet\u000a] 329
+[mpet\u000a][s] -> [mpet\u000as] 330
+[s][a] -> [sa] 331
+[lo][\u000a] -> [lo\u000a] 332
+[v][i] -> [vi] 333
+[\u000akon][tr] -> [\u000akontr] 334
+[gi][r] -> [gir] 335
+[gir][t] -> [girt] 336
+[m][a\u000a] -> [ma\u000a] 337
+[tar][\u000ak] -> [tar\u000ak] 338
+[u][n] -> [un] 339
+[o\u000a][m] -> [o\u000am] 340
+[an][d] -> [and] 341
+[l][in] -> [lin] 342
+[k][a\u000a] -> [ka\u000a] 343
+[b][u] -> [bu] 344
+[i][\u000a] -> [i\u000a] 345
+[\u000as][i] -> [\u000asi] 346
+[o][to] -> [oto] 347
+[s][en] -> [sen] 348
+[\u000ag][u] -> [\u000agu] 349
+[en][g\u000a] -> [eng\u000a] 350
+[du][l] -> [dul] 351
+[\u000akla][v] -> [\u000aklav] 352
+[e\u000a][s] -> [e\u000as] 353
+[t][h] -> [th] 354
+[z][er] -> [zer] 355
+[a\u000a][h] -> [a\u000ah] 356
+[u][m\u000a] -> [um\u000a] 357
+[ak][u] -> [aku] 358
+[ik][ gitar\u000a] -> [ik gitar\u000a] 359
+[el][e] -> [ele] 360
+[l][i] -> [li] 361
+[t][u] -> [tu] 362
+[\u000ak][orn] -> [\u000akorn] 363
+[n][e] -> [ne] 364
+[a][l] -> [al] 365
+[lo][k] -> [lok] 366
+[p][an] -> [pan] 367
+[f][ago] -> [fago] 368
+[t][e] -> [te] 369
+[u][du] -> [udu] 370
+[g][a\u000a] -> [ga\u000a] 371
+[lo][fon\u000a] -> [lofon\u000a] 372
+[m][ar] -> [mar] 373
+[mb][a\u000a] -> [mba\u000a] 374
+[r][a] -> [ra] 375
+[en][s] -> [ens] 376
+[ens][pi] -> [enspi] 377
+[a][s] -> [as] 378
+[c][k] -> [ck] 379
+[l\u000a][ta] -> [l\u000ata] 380
+[b][l] -> [bl] 381
+[e\u000a][c] -> [e\u000ac] 382
+[er][e\u000a] -> [ere\u000a] 383
+[ur][d] -> [urd] 384
+[urd][y] -> [urdy] 385
+[h][arp\u000a] -> [harp\u000a] 386
+[b][o] -> [bo] 387
+[tin][a\u000a] -> [tina\u000a] 388
+[gitar][\u000akem] -> [gitar\u000akem] 389
+[gitar\u000akem][an] -> [gitar\u000akeman] 390
+[gitar\u000akeman][\u000a] -> [gitar\u000akeman\u000a] 391
+[gitar\u000akeman\u000a][pi] -> [gitar\u000akeman\u000api] 392
+[gitar\u000akeman\u000api][yan] -> [gitar\u000akeman\u000apiyan] 393
+[gitar\u000akeman\u000apiyan][o\u000a] -> [gitar\u000akeman\u000apiyano\u000a] 394
+[gitar\u000akeman\u000apiyano\u000a][flut\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000a] 395
+[gitar\u000akeman\u000apiyano\u000aflut\u000a][d] -> [gitar\u000akeman\u000apiyano\u000aflut\u000ad] 396
+[gitar\u000akeman\u000apiyano\u000aflut\u000ad][a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000ada] 397
+[gitar\u000akeman\u000apiyano\u000aflut\u000ada][v] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adav] 398
+[gitar\u000akeman\u000apiyano\u000aflut\u000adav][ul] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul] 399
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul][\u000ak] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000ak] 400
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000ak][l] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000akl] 401
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000akl][ar] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklar] 402
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklar][n] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarn] 403
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarn][et\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000a] 404
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000a][tro] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atro] 405
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atro][mpet\u000as] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000as] 406
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000as][ak] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asak] 407
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asak][sa] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksa] 408
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksa][fon\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000a] 409
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000a][c] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000ac] 410
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000ac][el] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acel] 411
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acel][lo\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000a] 412
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000a][vi] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000avi] 413
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000avi][y] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviy] 414
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviy][o] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyo] 415
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyo][la] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola] 416
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola][\u000akontr] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontr] 417
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontr][bas] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas] 418
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas][\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000a] 419
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000a][arp\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000a] 420
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000a][ak] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aak] 421
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aak][or] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakor] 422
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakor][de] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakorde] 423
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakorde][on\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000a] 424
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000a][ba] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000aba] 425
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000aba][girt] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirt] 426
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirt][la] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtla] 427
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtla][k] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak] 428
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak][\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000a] 429
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000a][u] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000au] 430
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000au][d] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud] 431
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud][\u000aba] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000aba] 432
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000aba][g] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abag] 433
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abag][la] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abagla] 434
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abagla][ma\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000a] 435
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000a][sa] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asa] 436
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asa][z] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz] 437
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz][\u000ac] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000ac] 438
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000ac][u] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acu] 439
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acu][mb] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumb] 440
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumb][u] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbu] 441
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbu][s] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus] 442
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus][\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000a] 443
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000a][tar\u000ak] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000ak] 444
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000ak][an] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akan] 445
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akan][un] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun] 446
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun][\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000a] 447
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000a][ta] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000ata] 448
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000ata][mb] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atamb] 449
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atamb][ur] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur] 450
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur][\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000a] 451
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000a][uk] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000auk] 452
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000auk][ul] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukul] 453
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukul][el] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulel] 454
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulel][e\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000a] 455
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000a][b] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000ab] 456
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000ab][ang] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abang] 457
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abang][o\u000am] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000am] 458
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000am][and] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amand] 459
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amand][o] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amando] 460
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amando][lin] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin] 461
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin][\u000aba] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000aba] 462
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000aba][la] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abala] 463
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abala][la] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalala] 464
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalala][y] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalay] 465
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalay][ka\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000a] 466
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000a][bu] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abu] 467
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abu][z] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuz] 468
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuz][uk] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuk] 469
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuk][i\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000a] 470
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000a][lu] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alu] 471
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alu][t] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alut] 472
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alut][e\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000a] 473
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000a][l] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000al] 474
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000al][ir] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir] 475
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir][\u000asi] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asi] 476
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asi][tar\u000ak] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000ak] 477
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000ak][oto] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto] 478
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto][\u000as] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000as] 479
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000as][a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asa] 480
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asa][m] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asam] 481
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asam][i] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asami] 482
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asami][sen] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen] 483
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen][\u000agu] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000agu] 484
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000agu][z] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguz] 485
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguz][h] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzh] 486
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzh][eng\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000a] 487
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000a][dul] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adul] 488
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adul][c] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulc] 489
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulc][i] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulci] 490
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulci][m] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcim] 491
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcim][er] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer] 492
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer][\u000as] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000as] 493
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000as][an] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asan] 494
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asan][t] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asant] 495
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asant][ur] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur] 496
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur][\u000aklav] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklav] 497
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklav][sen] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen] 498
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen][\u000ac] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000ac] 499
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000ac][em] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acem] 500
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acem][ba] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acemba] 501
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acemba][lo\u000a] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000a] 502
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000a][or] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aor] 503
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aor][g] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg] 504
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg][\u000aklav] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg\u000aklav] 505
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg\u000aklav][y] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg\u000aklavy] 506
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg\u000aklavy][e\u000as] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg\u000aklavye\u000as] 507
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg\u000aklavye\u000as][y] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg\u000aklavye\u000asy] 508
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg\u000aklavye\u000asy][n] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg\u000aklavye\u000asyn] 509
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg\u000aklavye\u000asyn][th] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg\u000aklavye\u000asynth] 510
+[gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg\u000aklavye\u000asynth][e] -> [gitar\u000akeman\u000apiyano\u000aflut\u000adavul\u000aklarnet\u000atrompet\u000asaksafon\u000acello\u000aviyola\u000akontrbas\u000aarp\u000aakordeon\u000abagirtlak\u000aud\u000abaglama\u000asaz\u000acumbus\u000atar\u000akanun\u000atambur\u000aukulele\u000abango\u000amandolin\u000abalalayka\u000abuzuki\u000alute\u000alir\u000asitar\u000akoto\u000asamisen\u000aguzheng\u000adulcimer\u000asantur\u000aklavsen\u000acembalo\u000aorg\u000aklavye\u000asynthe] 511

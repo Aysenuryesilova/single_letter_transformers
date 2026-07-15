@@ -25,7 +25,7 @@ class TinyQwen(nn.Module):
         self.embed_tokens = nn.Embedding(cfg.vocab_size, cfg.hidden_size)
         self.layers = nn.ModuleList([TransformerBlock(cfg) for _ in range(cfg.num_layers)])
         self.norm = RMSNorm(cfg.hidden_size, cfg.rms_norm_eps)
-        self.lm_head = nn.Linear(cfg.hidden_size, cfg.vocab_size, bias=False)
+        self.lm_head = nn.Linear(cfg.hidden_size, 1024, bias=False)
 
         # Weight tying: the head reuses the embedding matrix.
         self.lm_head.weight = self.embed_tokens.weight

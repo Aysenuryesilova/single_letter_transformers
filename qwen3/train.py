@@ -6,7 +6,7 @@ from model import TinyQwen
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 tokenizer = BasicTokenizer()
-tokenizer.load("muzik_256.model")
+tokenizer.load(r"C:\Users\aysenur\Desktop\MAGİBU YAPAY ZEKA MİMARİSİ\single_letter_transformers\muzik_1024.model")
 
 text = open(os.path.join(os.path.dirname(__file__), "..", "data", "muzik_final.txt"), "r", encoding="utf-8").read()
 data = torch.tensor(tokenizer.encode(text), dtype=torch.long)
