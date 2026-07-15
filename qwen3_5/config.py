@@ -10,14 +10,13 @@ from dataclasses import dataclass
 
 @dataclass
 class ModelConfig:
-    vocab_size: int = 30          # 30 Turkish chars (incl. newline)
-    hidden_size: int = 32         # model / embedding dimension
-    num_layers: int = 4           # number of transformer blocks
-    num_heads: int = 4            # number of query heads
-    num_kv_heads: int = 2         # key/value heads for the FULL-attention layers (GQA)
-    head_dim: int = 8             # dimension per head (= hidden_size / num_heads)
-    intermediate_size: int = 64   # SwiGLU hidden dimension (~2x hidden_size)
-    max_seq_len: int = 24         # longest sequence we ever feed in (names are short)
-    rope_theta: float = 10000.0   # RoPE base frequency (full-attention layers only)
-    rms_norm_eps: float = 1e-6    # epsilon inside RMSNorm
-    full_attn_every: int = 4      # every 4th layer is full attention; the rest are Gated DeltaNet
+    vocab_size: int = 512        # Hepsi 512 olmalı!
+    hidden_size: int = 64        # CPU için güvenli bir orta değer
+    num_layers: int = 2          
+    num_heads: int = 4           
+    num_kv_heads: int = 2        
+    head_dim: int = 16           
+    intermediate_size: int = 128 
+    max_seq_len: int = 64        # Tokenizer'ın uzunluk kapasitesi
+    rope_theta: float = 10000.0
+    rms_norm_eps: float = 1e-6

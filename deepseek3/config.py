@@ -19,11 +19,11 @@ from dataclasses import dataclass
 
 @dataclass
 class ModelConfig:
-    vocab_size: int = 30          # 30 Turkish chars (incl. newline)
+    vocab_size: int = 512          # 30 Turkish chars (incl. newline)
     hidden_size: int = 32         # model / embedding dimension
     num_layers: int = 3           # first layer dense, the rest MoE (see below)
     num_heads: int = 4            # attention heads (MLA has no GQA; all heads share the KV latent)
-    max_seq_len: int = 24         # longest sequence we ever feed in (names are short)
+    max_seq_len: int = 64         # longest sequence we ever feed in (names are short)
     rope_theta: float = 10000.0   # RoPE base frequency
     rms_norm_eps: float = 1e-6    # epsilon inside RMSNorm
 

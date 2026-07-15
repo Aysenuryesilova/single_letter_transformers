@@ -51,7 +51,7 @@ class AceConfig:
     num_kv_heads: int = 2           # key/value heads (GQA)
     head_dim: int = 16              # dimension per head
     intermediate_size: int = 128    # SwiGLU hidden dim
-    max_seq_len: int = 32           # >= planner length (17) and DiT patch tokens (25)
+    max_seq_len: int = 64           # >= planner length (17) and DiT patch tokens (25)
     rope_theta: float = 10000.0
     rms_norm_eps: float = 1e-6
 
