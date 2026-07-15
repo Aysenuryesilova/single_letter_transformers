@@ -17,6 +17,6 @@ class ModelConfig:
     num_kv_heads: int = 2       # number of key/value heads (GQA: 2 query heads share each KV head)
     head_dim: int = 8           # dimension per head (= hidden_size / num_heads)
     intermediate_size: int = 64   # SwiGLU hidden dimension (~2x hidden_size)
-    max_seq_len: int = 24       # longest sequence we ever feed in (names are short)
+    max_seq_len: int = 64       # longest sequence we ever feed in (names are short)
     rope_theta: float = 10000.0  # RoPE base frequency
     rms_norm_eps: float = 1e-6  # epsilon inside RMSNorm
