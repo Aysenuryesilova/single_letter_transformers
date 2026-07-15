@@ -1,10 +1,4 @@
-model_name = sys.argv[1] # Terminalden model adını gir (örn: python generate.py gemma)
-if model_name == "gemma":
-    from model import TinyGemma
-    model = TinyGemma(cfg)
-elif model_name == "qwen":
-    from model import TinyQwen
-    model = TinyQwen(cfg)
+
 import sys
 import os
 import torch

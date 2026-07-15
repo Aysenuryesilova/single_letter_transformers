@@ -16,7 +16,7 @@ def get_batch():
     ix = torch.randint(len(data) - BLOCK_SIZE - 1, (BATCH_SIZE,))
     return torch.stack([data[i:i+BLOCK_SIZE] for i in ix]).to(DEVICE), torch.stack([data[i+1:i+1+BLOCK_SIZE] for i in ix]).to(DEVICE)
 
-model = TinyQwen(ModelConfig(vocab_size=256)).to(DEVICE)
+model = TinyQwen(ModelConfig(vocab_size=1024)).to(DEVICE)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3)
 
 model.train()
